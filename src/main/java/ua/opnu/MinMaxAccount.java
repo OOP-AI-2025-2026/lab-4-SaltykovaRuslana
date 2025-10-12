@@ -1,4 +1,4 @@
-package ua.opnu.java.inheritance.account;
+package ua.opnu;
 
 import ua.opnu.java.inheritance.account.BankingAccount;
 import ua.opnu.java.inheritance.account.Credit;
