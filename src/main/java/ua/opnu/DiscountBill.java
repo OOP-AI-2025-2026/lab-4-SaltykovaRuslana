@@ -5,7 +5,7 @@ import ua.opnu.java.inheritance.bill.GroceryBill;
 import ua.opnu.java.inheritance.bill.Item;
 
 public class DiscountBill extends GroceryBill {
-    private boolean regularCustomer;
+    private final boolean regularCustomer;
     private int discountCount;
     private double discountAmount;
     private double fullPrice;

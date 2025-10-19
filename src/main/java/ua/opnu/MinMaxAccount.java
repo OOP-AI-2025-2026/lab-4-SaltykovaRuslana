@@ -16,14 +16,14 @@ public class MinMaxAccount extends BankingAccount {
     }
 
     @Override
-    public void debit(Debit d) {
-        super.debit(d);
-        this.maxBalance = Math.max(this.minBalance, this.getBalance());
+    public void credit(Credit c) {
+        super.credit(c);
+        this.maxBalance = Math.max(this.maxBalance, this.getBalance());
     }
 
     @Override
-    public void credit(Credit c) {
-        super.credit(c);
+    public void debit(Debit d) {
+        super.debit(d);
         this.minBalance = Math.min(this.minBalance, this.getBalance());
     }
 
